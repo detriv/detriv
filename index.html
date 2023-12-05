@@ -29,7 +29,7 @@
     {
       color: white;
       font-family: 'Dosis Light', monospace;
-      font-size:20px;
+      font-size:16px;
     }
   </style>
 <div id="text-container" class="container">
@@ -39,8 +39,8 @@
 <script>
   // Teks yang akan ditampilkan satu per satu
   const texts = [
-    "Yang Terlewatkan",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, oh. Kesalahanku melewatkanmu. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "Lorem ipsum",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   ];
 
   // Inisialisasi elemen teks dan indeks
@@ -72,11 +72,11 @@
   function erase() {
     if (textElement.innerHTML.length > 0) {
       textElement.innerHTML = textElement.innerHTML.slice(0, -1);
-      setTimeout(erase, 100); // Waktu jeda antar karakter saat menghapus (dalam milidetik)
+      setTimeout(erase, 50); // Waktu jeda antar karakter saat menghapus (dalam milidetik)
     } else {
       textIndex++;
       charIndex = 0;
-      setTimeout(type, 1000); // Waktu jeda setelah menghapus sebelum menampilkan kata berikutnya (dalam milidetik)
+      setTimeout(type, 500); // Waktu jeda setelah menghapus sebelum menampilkan kata berikutnya (dalam milidetik)
     }
   }
 
