@@ -52,7 +52,7 @@
       if (charIndex < texts[textIndex].length) {
         textElement.innerHTML += texts[textIndex].charAt(charIndex);
         charIndex++;
-        setTimeout(type, 50); // Waktu jeda antar karakter (dalam milidetik)
+        setTimeout(type, 200); // Waktu jeda antar karakter (dalam milidetik)
       } else {
         setTimeout(erase, 1000); // Waktu jeda sebelum menghapus teks (dalam milidetik)
       }
@@ -70,11 +70,11 @@
   function erase() {
     if (textElement.innerHTML.length > 0) {
       textElement.innerHTML = textElement.innerHTML.slice(0, -1);
-      setTimeout(erase, 25); // Waktu jeda antar karakter saat menghapus (dalam milidetik)
+      setTimeout(erase, 100); // Waktu jeda antar karakter saat menghapus (dalam milidetik)
     } else {
       textIndex++;
       charIndex = 0;
-      setTimeout(type, 500); // Waktu jeda setelah menghapus sebelum menampilkan kata berikutnya (dalam milidetik)
+      setTimeout(type, 1000); // Waktu jeda setelah menghapus sebelum menampilkan kata berikutnya (dalam milidetik)
     }
   }
 
