@@ -1,87 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Dosis-Light.ttf">
-  <link rel="stylesheet" href="styles.css">
-  <title><__.|.__></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dosis-Light.ttf">
+    <link rel="stylesheet" href="styles.css">
+    <title><__.|.__></title>
 </head>
+
 <body>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-image: url('img.jpg');
-      background-size: cover; /* Menggunakan cover untuk mengisi seluruh area tanpa merubah aspek ratio */
-      background-repeat: no-repeat;
-      background-attachment: fixed; /* Membuat latar belakang tetap pada saat menggulir halaman */
-    }
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('img.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
-    /* Jika Anda ingin mengatur latar belakang hanya untuk bagian tertentu, Anda dapat menentukan selektor yang sesuai */
-    .container {
-      width: 80%;
-      margin: 0 auto;
-      padding: 20px; /* Memberikan lapisan transparan di atas gambar latar belakang */
-    }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-    .animated-text
-    {
-      color: white;
-      font-family: 'Dosis Light', monospace;
-      font-size:16px;
-    }
-  </style>
-<div id="text-container" class="container">
-  <span class="animated-text" id="text"></span>
-</div>
+        .animated-text {
+            color: white;
+            font-family: 'Dosis Light', monospace;
+            font-size: 16px;
+        }
+    </style>
 
-<script>
-  // Teks yang akan ditampilkan satu per satu
-  const texts = [
-    "Lorem ipsum",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  ];
+    <div id="text-container" class="container">
+        <span class="animated-text" id="text"></span>
+    </div>
 
-  // Inisialisasi elemen teks dan indeks
-  const textElement = document.getElementById('text');
-  let textIndex = 0;
-  let charIndex = 0;
+    <audio id="typingSound" src="typing.mp3"></audio>
 
-  // Fungsi untuk menampilkan teks satu per satu
-  function type() {
-    if (textIndex < texts.length) {
-      if (charIndex < texts[textIndex].length) {
-        textElement.innerHTML += texts[textIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, 200); // Waktu jeda antar karakter (dalam milidetik)
-      } else {
-        setTimeout(erase, 1000); // Waktu jeda sebelum menghapus teks (dalam milidetik)
-      }
-    } else {
-      // Jika sudah menampilkan semua teks, hapus teks dan mulai kembali dari awal
-      setTimeout(() => {
-        textIndex = 0;
-        charIndex = 0;
-        erase();
-      }, 1000);
-    }
-  }
+    <script>
+        const texts = [
+            "Lorem ipsum",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ];
 
-  // Fungsi untuk menghapus teks satu per satu
-  function erase() {
-    if (textElement.innerHTML.length > 0) {
-      textElement.innerHTML = textElement.innerHTML.slice(0, -1);
-      setTimeout(erase, 50); // Waktu jeda antar karakter saat menghapus (dalam milidetik)
-    } else {
-      textIndex++;
-      charIndex = 0;
-      setTimeout(type, 500); // Waktu jeda setelah menghapus sebelum menampilkan kata berikutnya (dalam milidetik)
-    }
-  }
+        const textElement = document.getElementById('text');
+        let textIndex = 0;
+        let charIndex = 0;
 
-  // Panggil fungsi type untuk memulai animasi teks
-  type();
-</script>
+        function type() {
+            if (textIndex < texts.length) {
+                if (charIndex < texts[textIndex].length) {
+                    textElement.innerHTML += texts[textIndex].charAt(charIndex);
+                    charIndex++;
+                    playTypingSound();
+                    setTimeout(type, 200);
+                } else {
+                    setTimeout(erase, 1000);
+                }
+            } else {
+                setTimeout(() => {
+                    textIndex = 0;
+                    charIndex = 0;
+                    erase();
+                }, 1000);
+            }
+        }
+
+        function erase() {
+            if (textElement.innerHTML.length > 0) {
+                textElement.innerHTML = textElement.innerHTML.slice(0, -1);
+                playTypingSound();
+                setTimeout(erase, 50);
+            } else {
+                textIndex++;
+                charIndex = 0;
+                setTimeout(type, 500);
+            }
+        }
+
+        function playTypingSound() {
+            const typingSound = document.getElementById('typingSound');
+            typingSound.play();
+        }
+
+        type();
+    </script>
 </body>
+
 </html>
