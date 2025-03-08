@@ -1,96 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Dosis-Light.ttf">
-    <link rel="stylesheet" href="styles.css">
-    <title>Deva Trivanus Zebua</title>
-</head>
-
-<body>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('newimage.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .animated-text {
-            color: white;
-            font-family: 'Dosis Light', monospace;
-            font-size: 16px;
-        }
-    </style>
-
-    <div id="text-container" class="container">
-        <span class="animated-text" id="text"></span>
-    </div>
-
-    <audio autoplay loop id="typingSound" src="ghost.mpeg"></audio>
-
-    <script>
-        const texts = [
-            "Hai... :)",
-            "masih ingat?",
-            "btw, kamu gimana kabarnya? pastinya kamu baik - baik saja bukan.",
-            "kapan ada waktu cerita?",
-            "aku mau dengar hal-hal hebat yg sudah kamu lewati selama ini",
-            "i miss u more than LiFe -Deva Trivanus"    
-        ];
-
-        const textElement = document.getElementById('text');
-        let textIndex = 0;
-        let charIndex = 0;
-
-        function type() {
-            if (textIndex < texts.length) {
-                if (charIndex < texts[textIndex].length) {
-                    textElement.innerHTML += texts[textIndex].charAt(charIndex);
-                    charIndex++;
-                    playTypingSound();
-                    setTimeout(type, 200);
-                } else {
-                    setTimeout(erase, 1000);
-                }
-            } else {
-                setTimeout(() => {
-                    textIndex = 0;
-                    charIndex = 0;
-                    erase();
-                }, 1000);
-            }
-        }
-
-        function erase() {
-            if (textElement.innerHTML.length > 0) {
-                textElement.innerHTML = textElement.innerHTML.slice(0, -1);
-                playTypingSound();
-                setTimeout(erase, 50);
-            } else {
-                textIndex++;
-                charIndex = 0;
-                setTimeout(type, 500);
-            }
-        }
-
-        function playTypingSound() {
-            const typingSound = document.getElementById('typingSound');
-            typingSound.play();
-        }
-
-        type();
-    </script>
-</body>
-
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+    <nav>
+        <a href="#first"><i class="far fa-user"></i></a>
+        <a href="#second"><i class="fas fa-briefcase"></i></a>
+        <a href="#third"><i class="far fa-file"></i></a>
+        <a href="#fourth"><i class="far fa-address-card"></i></a>
+      </nav>
+       
+     <div class= 'container'> 
+       <section id= 'first'>
+         <h1>First</h1>
+       </section>
+       
+       <section id= 'second'>
+         <h1>Second</h1>
+       </section>
+       
+      <section id= 'third'>
+        <h1>Third</h1>
+       </section>
+       
+      <section id= 'fourth'>
+        <h1>Fourth</h1>
+       </section>
+     </div>
+  </body>
 </html>
