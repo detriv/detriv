@@ -8,21 +8,26 @@
 --primary-color: #D96AA7;
 --secondary-color: #422C73;
 --complimentary-color: #88BFB5;
---contrast-color: #F2E527;
+--contrast-color: #c8e2a0;
 --light-color: #D2A9D9;
+
+--menu1-color: #ffbaa3;
+--menu2-color: #ffc0f8;
+--menu3-color: #c1f3c4;
+--menu4-color: #d0d9a9;
 }
 
 .container {
   background: #191919;
-  min-height: 100vh;
+  height: 100vh;
   font-family: Montserrat, sans-serif;
 }
 
 nav a {
-    font-size: 40px;
+    font-size: 25px;
     color: #fff;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -72,18 +77,18 @@ section:target h1 {
 }
 
 #first {
-  background:var(--primary-color);
+  background:var(--menu1-color);
 }
 #second {
-    background: var(--complimentary-color);
+    background: var(--menu2-color);
 }
 
 #third {
-    background: var(--contrast-color);
+    background: var(--menu3-color);
 }
 
 #fourth {
-    background: var(--light-color);
+    background: var(--menu4-color);
 }
 
 @keyframes fadeIn {
