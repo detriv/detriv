@@ -1,51 +1,76 @@
-# Hi there, I'm Deva Trivanus 👋
-
-🔭 I'm building mobile & web apps with .NET MAUI, Xamarin, Blazor, and C#.
+<!-- Banner / Header -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00F7F7&center=true&vCenter=true&width=800&lines=Hi+There+👋;+I'm+Deva+Trivanus!;+Mobile+%26+Web+Developer;+Blockchain+%26+.NET+Enthusiast" alt="Typing SVG" />
 
 ---
 
-### ​ Project Highlights
+<!-- Animated Gif -->
+<p align="center">
+  <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="600" alt="Coding animation">
+</p>
 
+---
+
+## 🏆 GitHub Trophies
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=devatrivanus18&theme=tokyonight&no-frame=true&no-bg=false&margin-w=15" />
+</p>
+
+---
+
+## 🚀 About Me  
+- 💻 Full Stack Developer (Mobile & Web)  
+- 🛠 Skilled in **.NET MAUI, Xamarin.Forms, Blazor, SignalR**  
+- 🗄 Experience with **SQLite, PostgreSQL, REST API**  
+- ☕ Coffee is my fuel while coding  
+- 🎯 Always exploring new tech and improving my craft  
+
+---
+
+## 🔥 Tech Stack
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,blazor,react,js,ts,python,postgres,sqlite,firebase,git,docker" />
+</p>
+
+---
+
+## 📈 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=devatrivanus18&show_icons=true&theme=tokyonight" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devatrivanus18&layout=compact&theme=tokyonight" height="165"/>
+</p>
+
+---
+
+## 🔄 Streak & Activity
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=devatrivanus18&theme=tokyonight&hide_border=true" />
+</p>
+
+---
+
+## ✨ Featured Projects  
 | Project | Description |
 |--------|-------------|
 | **TokoBuku-CRUD-SQLITE-XAMARIN** | Aplikasi CRUD toko buku sederhana menggunakan Xamarin.Forms + SQLite (MVVM) |
 | **BlazorReporting** | Blazor MAUI reporting dengan backend terpisah |
 | **SimpleAppUploadDownloadFileExcel** | Upload/download Excel, login OTP email, dan caching |
-| **Push-Notification-Signal-R-.NET** | Penerapan push notification menggunakan SignalR (VB.NET) |
-| **RestApiXamarinForms** | Integrasi REST API dalam Xamarin.Forms |
+| **Push-Notification-Signal-R-.NET** | Push notification menggunakan SignalR (VB.NET) |
 | **Kamus-Bahasa-Nias-.NET-MAUI** | Kamus Bahasa Nias menggunakan .NET MAUI |
 
 ---
 
-###  Tech Stack
-
-- **Languages:** C#, VB.NET
-- **Technologies:** .NET MAUI, Xamarin.Forms, Blazor, SignalR
-- **Databases:** SQLite, REST API
-- **Patterns:** MVVM, Clean Architecture (kalau ada)
-
----
-
-###  GitHub Stats & Activity
-
-![GitHub streak stats](https://streak-stats.demolab.com?user=devatrivanus18&theme=dark)  
-_(Tracking kontribusi harian kamu)_
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=devatrivanus18&show_icons=true&theme=tokyonight)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=devatrivanus18&layout=compact&theme=tokyonight)
+## 🌐 Connect with Me
+<p align="center">
+  <a href="https://linkedin.com/in/---"><img src="https://img.shields.io/badge/-LinkedIn-blue?logo=linkedin&logoColor=white" /></a>
+  <a href="https://instagram.com/---"><img src="https://img.shields.io/badge/-Instagram-E4405F?logo=instagram&logoColor=white" /></a>
+  <a href="https://devatrivanus18.blogspot.com"><img src="https://img.shields.io/badge/-Blog-black?logo=blogger&logoColor=white" /></a>
+</p>
 
 ---
 
-###  Connect with Me
+<!-- Footer animation -->
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" />
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/---)  
-[![Instagram](https://img.shields.io/badge/-Instagram-E1306C?logo=instagram&logoColor=white)](https://www.instagram.com/---)  
-[![Blog](https://img.shields.io/badge/-Blog-black?logo=blogger&logoColor=white)](https://devatrivanus18.blogspot.com)
-
----
-
-###  About Me
-
--  Passionate about building cross-platform mobile apps and desktop tooling.
--  Strong interest in reporting features and automating workflows.
--  Continually learning and exploring .NET ecosystem and modern UI frameworks.
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=00FF99&center=true&vCenter=true&width=600&lines=Thanks+for+visiting+my+profile!;Feel+free+to+check+out+my+repos+🚀" alt="Typing SVG" />
+</p>
