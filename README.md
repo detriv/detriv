@@ -1,5 +1,9 @@
-<!-- Banner / Header -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00F7F7&center=true&vCenter=true&width=800&lines=Hi+There+👋;+I'm+Deva+Trivanus!;+Mobile+%26+Web+Developer;+Blockchain+%26+.NET+Enthusiast" alt="Typing SVG" />
+<!-- Typing header -->
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&center=true&vCenter=true&width=800&lines=Hi+There+👋;I'm+Deva+Trivanus!;Mobile+%26+Web+Developer;Blockchain+%26+.NET+Enthusiast"
+    alt="Typing SVG" />
+</p>
 
 ---
 
