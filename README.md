@@ -1,9 +1,20 @@
+<!-- Title & Bio -->
+<h1 align="center">Hi, I'm Deva Trivanus 👋</h1>
+<h3 align="center">.NET Developer | Mobile & Web Software Engineer | Tech Enthusiast</h3>
+
+<p align="center">
+  Passionate about building high-quality cross-platform applications using .NET MAUI, Xamarin, and Blazor.
+  <br/>
+  Skilled in creating seamless mobile & web experiences, integrating APIs, and delivering robust solutions.
+</p>
+
 ---
 
 <!-- Animated Gif -->
 <p align="center">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="600" alt="Pria coding dari rumah">
 </p>
+
 
 
 ---
