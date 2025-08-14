@@ -67,7 +67,3 @@
 
 <!-- Footer animation -->
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png" />
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=00FF99&center=true&vCenter=true&width=600&lines=Thanks+for+visiting+my+profile!;Feel+free+to+check+out+my+repos+🚀" alt="Typing SVG" />
-</p>
