@@ -58,9 +58,12 @@
 
 ## 🌐 Connect with Me
 <p align="center">
-  <a href="https://linkedin.com/in/---"><img src="https://img.shields.io/badge/-LinkedIn-blue?logo=linkedin&logoColor=white" /></a>
-  <a href="https://instagram.com/---"><img src="https://img.shields.io/badge/-Instagram-E4405F?logo=instagram&logoColor=white" /></a>
-  <a href="https://devatrivanus18.blogspot.com"><img src="https://img.shields.io/badge/-Blog-black?logo=twitter&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/devatrivanus"><img src="https://img.shields.io/badge/-LinkedIn-blue?logo=linkedin&logoColor=white" /></a>
+  <a href="https://instagram.com/devatrivanus"><img src="https://img.shields.io/badge/-Instagram-E4405F?logo=instagram&logoColor=white" /></a>
+  <a href="https://twitter.com/devazamily">
+  <img src="https://img.shields.io/badge/-Twitter-1DA1F2?logo=twitter&logoColor=white" />
+</a>
+
 </p>
 
 ---
