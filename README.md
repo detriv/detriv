@@ -2,7 +2,7 @@
 
 <!-- Animated Gif -->
 <p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="600" alt="Pria coding dari rumah">
+  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="600" alt="Kartun pria mengetik cepat">
 </p>
 
 ---
